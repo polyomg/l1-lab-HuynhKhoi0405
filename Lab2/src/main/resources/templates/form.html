@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2 - Param</title>
+</head>
+<body>
+<h2>Form nhập</h2>
+<form action="/param/save/2021" method="post">
+    <input name="y" value="2031">
+    <button>Save</button>
+</form>
+
+<h2>Kết quả:</h2>
+<ul>
+    <li th:text="${x}"></li>
+    <li th:text="${y}"></li>
+</ul>
+</body>
+</html>
